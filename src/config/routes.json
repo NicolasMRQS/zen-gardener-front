@@ -1,0 +1,15 @@
+{
+    "index" : "/",
+    "login" : "/connexion",
+    "register" : "/inscription",
+    "dashboard" : "/tableau-de-bord",
+    "sheets" : "/fiches",
+    "categories" : "/categories",
+    "tasks" : "/taches",
+    "contact" : "/contact",
+    "termsOfService" : "/cgu",
+    "whoWeAre" : "/qui-sommes-nous",
+    "error" : "/erreur",
+    "profile" : "/profil",
+    "catchAll": "*"
+}

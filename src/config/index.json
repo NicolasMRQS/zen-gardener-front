@@ -1,0 +1,5 @@
+{
+  "ENVIRONMENT": "development",
+  "API_URL": "https://zen-gardener-api.herokuapp.com",
+  "API_MOCK_ENABLED": false
+}

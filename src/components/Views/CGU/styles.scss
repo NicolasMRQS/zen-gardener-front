@@ -1,0 +1,48 @@
+@use 'src/styles/vars';
+
+.CGU {
+  background-color: vars.$white;
+  padding: 2rem;
+  text-align: justify;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 345px;
+  }
+
+  &__article {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 3rem 0 1rem;
+  }
+
+  &__paragraph {
+    margin: 1rem 0;
+  }
+
+  &__paragraph-list {
+    margin-top: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    list-style: disc;
+  }
+
+  &__underline-title {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  &__strong {
+    font-weight: bold;
+  }
+}

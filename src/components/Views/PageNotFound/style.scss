@@ -1,0 +1,44 @@
+@use 'src/styles/vars';
+
+.PageNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+
+  min-height: vars.$dashboard-bottom;
+
+  &__container {
+    background-color: vars.$bg-sign;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    min-height: 300px;
+    min-width: 300px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__nopassword {
+    text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}

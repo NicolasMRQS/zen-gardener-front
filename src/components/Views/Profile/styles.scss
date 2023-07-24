@@ -1,0 +1,122 @@
+@use 'src/styles/vars';
+
+.Profile {
+  background-color: vars.$bg-blur;
+  min-height: vars.$dashboard-bottom;
+  padding: vars.$padding-corner;
+  box-shadow: vars.$box-shadow;
+  display: flex;
+
+  @media screen and (max-width: vars.$breakoint-phone) {
+    padding: 0;
+  }
+
+  &__container {
+    background-color: darken(vars.$white, 5%);
+    padding: 2rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 15px;
+
+    @media screen and (max-width: vars.$breakoint-phone) {
+      padding: 2rem;
+      margin: 0;
+      max-width: none;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: vars.$font-title;
+  }
+
+  &__input-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__infos-container {
+    background-color: vars.$white;
+    position: relative;
+    padding: 4rem 1rem 2rem;
+    // margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 320px;
+    min-width: 281px;
+  }
+
+  &__my-infos {
+    border: 1px solid #000;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-left: none;
+    position: absolute;
+    padding: .5rem 1rem;
+    top: 0;
+    left: 0;
+  }
+
+  &__edit {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    &:hover {
+      color: vars.$bg-sign;
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(82, 82, 82);
+  }
+
+  &__label {
+    min-width: 95px;
+  }
+
+  &__input {
+    width: 100%;
+    flex: 1;
+
+    &:disabled {
+      border-color: transparent;
+      background-color: inherit;
+    }
+  }
+
+  &__submit {
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+    padding: 1rem 3rem;
+    border: none;
+    background-color: vars.$bg-sign;
+    color: vars.$white;
+    border-radius: 5px;
+
+
+    &:hover {
+      background-color: darken($color: vars.$bg-sign, $amount: 3);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

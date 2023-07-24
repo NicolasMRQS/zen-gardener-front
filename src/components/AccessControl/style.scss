@@ -1,0 +1,36 @@
+@use '/src/styles/vars';
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loading_container {
+  width: 100%;
+  height: vars.$dashboard-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  max-width: 40%;
+  max-height: 40%;
+  animation: rotating 1s linear infinite;
+  border: 4px solid;
+  border-color: #5d8729 #e56007 #5d8729 #e56007;
+  border-radius: 50%;
+  padding: 1.5rem;
+}

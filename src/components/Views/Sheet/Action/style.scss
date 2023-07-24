@@ -1,0 +1,17 @@
+@use '/src/styles/vars';
+
+.Action {
+  display: flex;
+  gap: 20px;
+  background-color: vars.$bg-sign;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 0.5em;
+  max-width: 520px;
+  line-height: 1.4em;
+  margin-top: 10px;
+
+  &__label {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,69 @@
+@use 'src/styles/vars';
+
+.About {
+  background-color: vars.$bg-blur;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: vars.$dashboard-bottom;
+
+  &__title {
+    font-size: 4rem;
+    color: vars.$white;
+    font-family: vars.$font-title;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__card {
+    background-color: vars.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: vars.$font-title;
+  }
+
+  &__role {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 700;
+    color: darken($color: vars.$bg-sign, $amount: 2);
+  }
+
+  &__linkedin,
+  &__github {
+
+    &:hover {
+      color: vars.$bg-sign;
+    }
+  }
+
+
+}

@@ -1,0 +1,11 @@
+@use 'src/styles/vars';
+
+.Page {
+  height: vars.$dashboard-bottom;
+  overflow: auto;
+
+
+  &__logo {
+    margin-left: 3rem;
+  }
+}

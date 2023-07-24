@@ -1,0 +1,17 @@
+@use 'src/styles/vars';
+
+.SubmitButton {
+  padding: 0.8rem 4rem;
+  border-radius: 20px;
+  color: vars.$bg-sign;
+  font-weight: bold;
+  max-width: 170px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &:hover {
+    background-color: vars.$color-sign-bar;
+    color: #fff;
+  }
+}

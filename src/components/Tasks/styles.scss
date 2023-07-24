@@ -1,0 +1,35 @@
+@use 'src/styles/vars';
+
+.rbc-agenda-event-cell {
+  cursor: pointer;
+}
+
+.editCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editInputName {
+  text-align: center;
+}
+
+.submitUpdateTask,
+.submitDeleteTask {
+  display: block;
+  max-width: 140px;
+  width: 90%;
+  margin: 1rem auto 0;
+  color: vars.$white;
+  background-color: vars.$bg-sign;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    background-color: darken($color: vars.$bg-sign, $amount: 3);
+  }
+}

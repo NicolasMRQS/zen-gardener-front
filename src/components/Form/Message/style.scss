@@ -1,0 +1,46 @@
+@keyframes slidein {
+  from {
+    bottom: 7%;
+  }
+  to {
+    bottom: 25%;
+  }
+}
+
+.Message {
+  position: fixed;
+  z-index: 2;
+  bottom: 25%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: 300px;
+  max-width: 90%;
+  max-height: 25vh;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  padding: 1.2em;
+  background-color: rgba(194, 255, 186, 0.95);
+  color: #019131;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid;
+  border-radius: 5px;
+  animation: 0.3s ease slidein ;
+  text-align: center;
+
+  &--error {
+    background-color: rgba(255, 186, 186, .95);
+    color: #cf000a;
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.alert-logo {
+  cursor: pointer;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}

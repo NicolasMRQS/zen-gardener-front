@@ -1,0 +1,91 @@
+@use 'src/styles/vars';
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__form {
+    background-color: vars.$white;
+    padding: 2rem;
+    max-width: 550px;
+    width: 97%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field {
+    margin: 2rem 0;
+  }
+
+  &__body {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+
+  &__select {
+    display: block;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #8b8e92;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      border-color: #2d83f3;
+      outline: none;
+    }
+  }
+
+  &__textarea,
+  &__input {
+    padding: 1rem;
+    background-color: #f0f2f5;
+    color: #8b8e92;
+    border: 1px solid #8b8e92;
+    border-radius: 5px;
+    width: 100%;
+
+    &:hover {
+      background-color: #e4e6eb;
+    }
+
+    &:focus {
+      border-color: #2d83f3;
+      outline: none;
+      background-color: vars.$white;
+    }
+  }
+
+  &__textarea {
+    min-height: 100px;
+  }
+
+  & button[type=submit] {
+    color: #2d83f3;
+    max-width: 170px;
+    align-self: center;
+
+    &:hover {
+      background-color: #e4e6eb;
+      color: darken(#2d83f3, 10%);
+    }
+  }
+
+  & span[role=alert] {
+    color: red;
+    margin-top: 1em;
+  }
+}
